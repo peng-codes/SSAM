@@ -1,0 +1,1 @@
+PATH=$LOCAL_HOME/cuda-10.0/bin:$PATH nvprof --normalized-time-unit ms --print-gpu-trace ./Release/ssai-2dconv > /dev/null 2>nvcc-results

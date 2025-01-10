@@ -1,0 +1,3 @@
+﻿  Inline build failed - ReadFile failed, win32 error code 109. Doing a normal build...
+  Build/launch failed: Exceeded 100 iterations while trying to resolve $(BuildDir). Check your project settings for infinite variable loops.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(36,5): error MSB3073: The command ""C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /clean "D:\Research\src\stencils\micro-benchmark\micro-benchmark.vcxproj" "/solution:D:\Research\src\stencils\stencils.sln"  "/config:Release" "/platform:Win32"" exited with code 1.

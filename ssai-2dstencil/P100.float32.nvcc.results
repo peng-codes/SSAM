@@ -1,0 +1,154 @@
+==8471== NVPROF is profiling process 8471, command: ./Release/ssai-2dstencil 8192 tmp_5 float
+==8471== Profiling application: ./Release/ssai-2dstencil 8192 tmp_5 float
+==8471== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.52e+03  30.08062                    -               -         -         -         -  256.0000    8.311000    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.80e+03  1.352524           (94 456 1)       (128 1 1)        56         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_tmp::j2d5pt<float, int=128, int=18, int=5>(float const *, stencil2d_tmp::j2d5pt<float, int=128, int=18, int=5>*, int, int, stencil2d_tmp::j2d5pt<float, int=128, int=18, int=5>, stencil2d_tmp::j2d5pt<float, int=128, int=18, int=5>, stencil2d_tmp::j2d5pt<float, int=128, int=18, int=5>, stencil2d_tmp::j2d5pt<float, int=128, int=18, int=5>, stencil2d_tmp::j2d5pt<float, int=128, int=18, int=5>) [421]
+2.80e+03  23.59266                    -               -         -         -         -  256.0000   10.596518      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==8759== NVPROF is profiling process 8759, command: ./Release/ssai-2dstencil 8192 tmp_9 float
+==8759== Profiling application: ./Release/ssai-2dstencil 8192 tmp_9 float
+==8759== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.52e+03  30.04897                    -               -         -         -         -  256.0000    8.319753    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.79e+03  1.568206          (103 482 1)       (128 1 1)        56         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>(float const *, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>*, int, int, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>, stencil2d_tmp::j2d9pt<float, int=128, int=17, int=3>) [421]
+2.80e+03  23.57061                    -               -         -         -         -  256.0000   10.606429      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==9033== NVPROF is profiling process 9033, command: ./Release/ssai-2dstencil 8192 5 float
+==9033== Profiling application: ./Release/ssai-2dstencil 8192 5 float
+==9033== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.75e+03  30.29698                    -               -         -         -         -  256.0000    8.251649    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+3.03e+03  1.029353          (69 2048 1)       (128 1 1)        21         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_v1::j2d5pt<float, int=128, int=4>(float const *, stencil2d_v1::j2d5pt<float, int=128, int=4>*, int, int, stencil2d_v1::j2d5pt<float, int=128, int=4>, stencil2d_v1::j2d5pt<float, int=128, int=4>, stencil2d_v1::j2d5pt<float, int=128, int=4>, stencil2d_v1::j2d5pt<float, int=128, int=4>, stencil2d_v1::j2d5pt<float, int=128, int=4>) [421]
+3.03e+03  23.52594                    -               -         -         -         -  256.0000   10.626569      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==9310== NVPROF is profiling process 9310, command: ./Release/ssai-2dstencil 8192 9 float
+==9310== Profiling application: ./Release/ssai-2dstencil 8192 9 float
+==9310== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.47e+03  30.01310                    -               -         -         -         -  256.0000    8.329696    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.75e+03  1.040585          (74 2048 1)       (128 1 1)        24         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_9pt::j2d9pt<float, int=128, int=4>(float const *, stencil2d_9pt::j2d9pt<float, int=128, int=4>*, int, int, stencil2d_9pt::j2d9pt<float, int=128, int=4>, stencil2d_9pt::j2d9pt<float, int=128, int=4>, stencil2d_9pt::j2d9pt<float, int=128, int=4>, stencil2d_9pt::j2d9pt<float, int=128, int=4>, stencil2d_9pt::j2d9pt<float, int=128, int=4>, stencil2d_9pt::j2d9pt<float, int=128, int=4>, stencil2d_9pt::j2d9pt<float, int=128, int=4>, stencil2d_9pt::j2d9pt<float, int=128, int=4>, stencil2d_9pt::j2d9pt<float, int=128, int=4>) [421]
+2.75e+03  23.56856                    -               -         -         -         -  256.0000   10.607351      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==9582== NVPROF is profiling process 9582, command: ./Release/ssai-2dstencil 8192 13 float
+==9582== Profiling application: ./Release/ssai-2dstencil 8192 13 float
+==9582== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.47e+03  30.09809                    -               -         -         -         -  256.0000    8.306174    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.75e+03  1.171467          (79 2048 1)       (128 1 1)        28         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_13pt::j2d13pt<float, int=128, int=4>(float const *, stencil2d_13pt::j2d13pt<float, int=128, int=4>*, int, int, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>, stencil2d_13pt::j2d13pt<float, int=128, int=4>) [421]
+2.75e+03  23.53733                    -               -         -         -         -  256.0000   10.621426      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==9867== NVPROF is profiling process 9867, command: ./Release/ssai-2dstencil 8192 17 float
+==9867== Profiling application: ./Release/ssai-2dstencil 8192 17 float
+==9867== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.47e+03  29.98363                    -               -         -         -         -  256.0000    8.337883    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.74e+03  1.116426          (86 1024 1)       (128 1 1)        32         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_17pt::j2d17pt<float, int=128, int=8>(float const *, stencil2d_17pt::j2d17pt<float, int=128, int=8>*, int, int, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>, stencil2d_17pt::j2d17pt<float, int=128, int=8>) [421]
+2.74e+03  23.54895                    -               -         -         -         -  256.0000   10.616186      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==10152== NVPROF is profiling process 10152, command: ./Release/ssai-2dstencil 8192 21 float
+==10152== Profiling application: ./Release/ssai-2dstencil 8192 21 float
+==10152== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.49e+03  30.02795                    -               -         -         -         -  256.0000    8.325578    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.76e+03  1.661039          (94 2048 1)       (128 1 1)        31         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_21pt::j2d21pt<float, int=128, int=4>(float const *, stencil2d_21pt::j2d21pt<float, int=128, int=4>*, int, int, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>, stencil2d_21pt::j2d21pt<float, int=128, int=4>) [421]
+2.77e+03  23.54997                    -               -         -         -         -  256.0000   10.615726      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==10444== NVPROF is profiling process 10444, command: ./Release/ssai-2dstencil 8192 25 float
+==10444== Profiling application: ./Release/ssai-2dstencil 8192 25 float
+==10444== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.49e+03  30.09879                    -               -         -         -         -  256.0000    8.305981    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.77e+03  1.993298         (103 2048 1)       (128 1 1)        32         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_25pt::j2d25pt<float, int=128, int=4>(float const *, stencil2d_25pt::j2d25pt<float, int=128, int=4>*, int, int, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>, stencil2d_25pt::j2d25pt<float, int=128, int=4>) [421]
+2.77e+03  23.56261                    -               -         -         -         -  256.0000   10.610031      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==10727== NVPROF is profiling process 10727, command: ./Release/ssai-2dstencil 8192 64 float
+==10727== Profiling application: ./Release/ssai-2dstencil 8192 64 float
+==10727== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.47e+03  30.03777                    -               -         -         -         -  256.0000    8.322855    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.75e+03  2.223411          (86 2048 1)       (128 1 1)        30         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_64pt::j2d64pt<float, int=128, int=4>(float const *, stencil2d_64pt::j2d64pt<float, int=128, int=4>*, int, int) [421]
+2.75e+03  23.52994                    -               -         -         -         -  256.0000   10.624764      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==11008== NVPROF is profiling process 11008, command: ./Release/ssai-2dstencil 8192 81 float
+==11008== Profiling application: ./Release/ssai-2dstencil 8192 81 float
+==11008== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.47e+03  29.98695                    -               -         -         -         -  256.0000    8.336959    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.75e+03  2.537558          (86 2048 1)       (128 1 1)        27         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_81::j2d81pt<float, int=128, int=4>(float const *, stencil2d_81::j2d81pt<float, int=128, int=4>*, int, int) [421]
+2.75e+03  23.55458                    -               -         -         -         -  256.0000   10.613649      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
+==11296== NVPROF is profiling process 11296, command: ./Release/ssai-2dstencil 8192 121 float
+==11296== Profiling application: ./Release/ssai-2dstencil 8192 121 float
+==11296== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+      ms        ms                                                        B         B        MB        GB/s
+2.52e+03  42.89958                    -               -         -         -         -  256.0000    5.827563    Pageable      Device  Tesla P100-SXM2         1         7  [CUDA memcpy HtoD]
+2.81e+03  3.725409          (94 2048 1)       (128 1 1)        31         0         0         -           -           -           -  Tesla P100-SXM2         1         7  void stencil2d_121pt::j2d121pt<float, int=128, int=4>(float const *, stencil2d_121pt::j2d121pt<float, int=128, int=4>*, int, int) [421]
+2.81e+03  37.53371                    -               -         -         -         -  256.0000    6.660680      Device    Pageable  Tesla P100-SXM2         1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
